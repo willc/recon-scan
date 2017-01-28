@@ -1,9 +1,7 @@
 # recon-scan
 Enumeration scripts for penetration testing. Automates a number of Kali things, amongst other stuff.
 
-This readme file pertains to the reconscan.py script and all associated scripts. 
-
-Currently these scripts include: 
+Currently scripts included: 
 reconscan.py (main)
 dirbust.py  
 dnsrecon.py  
@@ -14,16 +12,18 @@ smtprecon.py
 snmprecon.py  
 sshrecon.py
 
-This collection of scripts is intended to be executed remotely against a list of IPs to enumerate discovered 
+This collection of scripts is intended to be executed remotely against an IP or a list of IPs to enumerate discovered 
 services such as smb, smtp, snmp, ftp and other.
 
+Requirements:
+--Needs to be run from Kali Linux (Rolling 2)
 
 Adapted and enhanced by Will Chatham - @willc
 Original author: 
 Mike Czumak (T_v3rn1x) -- @SecuritySift
 
 How to use:
-reconscan.py is the main script which calls all other scripts. Simply run it and it should do the work for you.
+reconscan.py is the main script, and it calls all other scripts. Simply run it and it should do the work for you.
 Since I wrote this for a very specific use case I hard-coded all paths so be sure you change them accordingly.
 You'll also need to check the directories used for writing and modify accordingly as well. I intentionally kept 
 these scripts modular so that each script could also be run on its own.
